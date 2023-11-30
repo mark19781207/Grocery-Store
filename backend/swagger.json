@@ -1,0 +1,269 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Grocery API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/login": {
+            "post": {
+                "description": "login",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "401": {
+                        "description": "Username or password does not match"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        },
+        "/employees": {
+            "get": {
+                "description": "Get all employees items",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        },
+        "/employees/:id": {
+            "get": {
+                "description": "Get a employees items by ID",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            },
+            "put": {
+                "description": "Update a employees by ID",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            },
+            "delete": {
+                "description": "Delete a employees item by ID",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        },
+        "/employees/": {
+            "post": {
+                "description": "Create a new employees item",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        },
+        "/carts": {
+            "get": {
+                "description": "Get all carts items",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        },
+        "/carts/:id": {
+            "get": {
+                "description": "Get a carts items by ID",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            },
+            "put": {
+                "description": "Update a carts by ID",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            },
+            "delete": {
+                "description": "Delete a carts item by ID",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        },
+        "/carts/": {
+            "post": {
+                "description": "Create a new carts item",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        },
+        "/products": {
+            "get": {
+                "description": "Get all products items",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        },
+        "/products/:id": {
+            "get": {
+                "description": "Get a products items by ID",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            },
+            "put": {
+                "description": "Update a products by ID",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            },
+            "delete": {
+                "description": "Delete a products item by ID",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        },
+        "/products/": {
+            "post": {
+                "description": "Create a new products item",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        },
+        "/orders": {
+            "get": {
+                "description": "Get all orders items",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        },
+        "/orders/:id": {
+            "get": {
+                "description": "Get a orders items by ID",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            },
+            "put": {
+                "description": "Update a orders by ID",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            },
+            "delete": {
+                "description": "Delete a orders item by ID",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        },
+        "/orders/": {
+            "post": {
+                "description": "Create a new orders item",
+                "responses": {
+                    "201": {
+                        "description": "Successful response"
+                    },
+                    "500": {
+                        "description": "failed response"
+                    }
+                }
+            }
+        }
+    }
+}

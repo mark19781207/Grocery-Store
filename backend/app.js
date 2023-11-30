@@ -4,7 +4,9 @@ const bodyParser = require('body-parser');
 const app = express();
 const cors = require('cors');
 const Employees = require('./models/employees');
-
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -30,15 +32,15 @@ const users = [];
 app.use(bodyParser.json());
 
 // Registration endpoint
-app.post('/register', async (req, res) => {
-  const newEmployees = new Employees(req.body);
-  try {
-    const Employees = await newEmployees.save();
-    res.status(201).json({ Employees, message: 'User registered successfully' });
-  } catch (err) {
-    res.status(400).json({ error: err.message });
-  }
-});
+// app.post('/register', async (req, res) => {
+//   const newEmployees = new Employees(req.body);
+//   try {
+//     const Employees = await newEmployees.save();
+//     res.status(201).json({ Employees, message: 'User registered successfully' });
+//   } catch (err) {
+//     res.status(400).json({ error: err.message });
+//   }
+// });
 
 const PORT = process.env.PORT || 5000;
 
